@@ -1,11 +1,7 @@
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
   font-family: Roboto, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -14,7 +10,7 @@ body {
   letter-spacing: 0%;
 }
 
-header {
+.header {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -27,13 +23,13 @@ header {
   margin-left: 50px;
 }
 
-nav {
+.nav {
   margin: 0;
   margin-right: 40px;
   padding: 0;
 }
 
-ul {
+.nav__menu {
   margin: 0;
   padding: 0;
   display: flex;
@@ -41,12 +37,13 @@ ul {
   align-items: center;
 }
 
-ul li {
+.nav__menu .nav__item {
   list-style-type: none;
   text-align: center;
 }
 
-ul li a {
+.nav__menu .nav__item .nav__link {
+  justify-content: center;
   margin: 0 10px;
   color: black;
   text-transform: uppercase;
@@ -57,25 +54,25 @@ ul li a {
   position: relative;
 }
 
-nav a:hover {
+.nav .nav__link:hover {
   color: #00acdc; /* color: #00bcd4; */
 }
 
-nav a.is-active {
+.nav .nav__link.is-active {
   color: #00acdc; /* color: #00bcd4; */
   position: relative;
   text-decoration: none;
 }
 
-ul li:first-child a {
+.nav__menu .nav__item:first-child a {
   margin-left: 0;
 }
 
-nav ul li:last-child {
+.nav .nav__menu .nav__item:last-child {
   margin-right: 0;
 }
 
-nav a.is-active::after {
+.nav .nav__link.is-active::after {
   content: '';
   padding: 0;
   display: block;
