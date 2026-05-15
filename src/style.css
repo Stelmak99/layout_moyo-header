@@ -1,7 +1,11 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
   font-family: Roboto, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -10,8 +14,7 @@ body {
   letter-spacing: 0%;
 }
 
-.header {
-  height: 60px;
+header {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -20,17 +23,20 @@ body {
   align-items: center;
 }
 
-.header__logo {
+.logo {
+  height: 40px;
+  margin: auto;
+  margin-top: 10px;
   margin-left: 50px;
 }
 
-.nav {
+nav {
   margin: 0;
   margin-right: 40px;
   padding: 0;
 }
 
-.nav__menu {
+ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -38,13 +44,12 @@ body {
   align-items: center;
 }
 
-.nav__menu .nav__item {
+ul li {
   list-style-type: none;
   text-align: center;
 }
 
-.nav__menu .nav__item .nav__link {
-  justify-content: center;
+ul li a {
   margin: 0 10px;
   color: black;
   text-transform: uppercase;
@@ -55,25 +60,25 @@ body {
   position: relative;
 }
 
-.nav .nav__link:hover {
-  color: #00acdc;
+nav a:hover {
+  color: #00acdc; /* color: #00bcd4; */
 }
 
-.nav .nav__link.is-active {
+nav a.is-active {
   color: #00acdc; /* color: #00bcd4; */
   position: relative;
   text-decoration: none;
 }
 
-.nav__menu .nav__item:first-child a {
+ul li:first-child a {
   margin-left: 0;
 }
 
-.nav .nav__menu .nav__item:last-child {
+nav ul li:last-child {
   margin-right: 0;
 }
 
-.nav .nav__link.is-active::after {
+nav a.is-active::after {
   content: '';
   padding: 0;
   display: block;
