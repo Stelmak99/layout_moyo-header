@@ -1,7 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --main-blue: #00acdc;
 }
 
 body {
@@ -10,9 +8,11 @@ body {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   height: 60px;
@@ -25,48 +25,43 @@ header {
   display: block;
 }
 
-nav {
+.main__menu {
   margin: 0;
   margin-left: auto;
   padding: 0;
 }
 
-ul {
+.nav__menu {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
 }
 
-ul li {
+.nav__menu .nav__item {
   list-style-type: none;
   margin-right: 20px;
 }
 
-ul li a {
+.nav__menu .nav__item .nav__link {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
+  justify-content: center;
   line-height: 60px;
   position: relative;
 }
 
-nav a:hover {
-  color: #00acdc; /* color: #00bcd4; */
+.main__menu .nav__link:hover {
+  color: var(--main-blue); /* color: #00bcd4; */
 }
 
-nav a.is-active {
-  color: #00acdc; /* color: #00bcd4; */
-  position: relative;
-  text-decoration: none;
-}
-
-nav ul li:last-child {
+.main__menu .nav__menu .nav__item:last-child {
   margin-right: 0;
 }
 
-nav a.is-active::after {
+.main__menu .nav__link.is-active::after {
   content: '';
   padding: 0;
   display: block;
@@ -74,7 +69,7 @@ nav a.is-active::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #00acdc; /* background-color: #00bcd4; */
+  background-color: var(--main-blue); /* background-color: #00bcd4; */
   height: 4px;
   width: 100%;
   border-radius: 16px;
