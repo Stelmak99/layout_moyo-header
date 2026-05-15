@@ -10,29 +10,24 @@ body {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%;
-  letter-spacing: 0%;
 }
 
 header {
-  width: 100%;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: 60px;
+  padding: 0 50px;
 }
 
-.logo {
+.logo img {
   height: 40px;
-  margin: auto;
-  margin-top: 10px;
-  margin-left: 50px;
+  width: auto;
+  display: block;
 }
 
 nav {
   margin: 0;
-  margin-right: 40px;
+  margin-left: auto;
   padding: 0;
 }
 
@@ -40,23 +35,20 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 ul li {
   list-style-type: none;
-  text-align: center;
+  margin-right: 20px;
 }
 
 ul li a {
-  margin: 0 10px;
   color: black;
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: 60px;
+  display: block;
+  line-height: 60px;
   position: relative;
 }
 
@@ -68,10 +60,6 @@ nav a.is-active {
   color: #00acdc; /* color: #00bcd4; */
   position: relative;
   text-decoration: none;
-}
-
-ul li:first-child a {
-  margin-left: 0;
 }
 
 nav ul li:last-child {
