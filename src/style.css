@@ -19,7 +19,7 @@ body {
   padding: 0 50px;
 }
 
-.logo img {
+.logo {
   height: 40px;
   width: auto;
   display: block;
@@ -73,4 +73,8 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 16px;
+}
+
+.main__menu .nav__link.is-active {
+  color: var(--main-blue);
 }
